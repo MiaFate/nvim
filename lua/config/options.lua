@@ -1,6 +1,9 @@
 -- [[ Setting options ]]
 -- See `:help vim.o`
 
+--lua=loader
+vim.loader.enable()
+
 -- Set highlight on search
 vim.o.hlsearch = true
 
