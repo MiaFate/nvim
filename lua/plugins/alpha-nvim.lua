@@ -1,6 +1,7 @@
 return {
   "goolord/alpha-nvim",
   event = "VimEnter",
+  cmd = "Alpha",
   opts = function()
     local dashboard = require("alpha.themes.dashboard")
     local logo = [[
@@ -27,6 +28,7 @@ return {
       dashboard.button("r", " " .. " Recent files", ":Telescope oldfiles <CR>"),
       dashboard.button("g", " " .. " Find text", ":Telescope live_grep <CR>"),
       dashboard.button("c", " " .. " Config", ":e $MYVIMRC <CR>"),
+      dashboard.button("d", " " .. " Neovim dir", ":n ~/.config/nvim/ <CR>"),
       dashboard.button("s", " " .. " Restore Session", [[:lua require("persistence").load() <cr>]]),
       dashboard.button("l", "󰒲 " .. " Lazy", ":Lazy<CR>"),
       dashboard.button("q", " " .. " Quit", ":qa<CR>"),
@@ -35,7 +37,7 @@ return {
       button.opts.hl = "AlphaButtons"
       button.opts.hl_shortcut = "AlphaShortcut"
     end
-    dashboard.section.header.opts.hl = "AlphaHeader"
+    dashboard.section.header.opts.hl = "Keyword"
     dashboard.section.buttons.opts.hl = "AlphaButtons"
     dashboard.section.footer.opts.hl = "AlphaFooter"
     dashboard.opts.layout[1].val = 8

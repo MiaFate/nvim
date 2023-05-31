@@ -4,8 +4,9 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-require("config.options")
-require("config.folding-options")
-require("config.keymaps")
-require("config.lazy")
-require("config.kickstartconfigs")
+require("miafate.config.options")
+require("miafate.config.folding-options")
+--require("miafate.config.mappings")
+--require("miafate.config.keymaps")
+require("miafate.config.lazy")
+require("miafate.config.kickstartconfigs")

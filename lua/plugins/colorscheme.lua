@@ -41,8 +41,8 @@ return {
                 gitsigns = true,
                 nvimtree = true,
                 telescope = true,
-                notify = false,
-                mini = false,
+                notify = true,
+                mini = true,
                 -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
             },
         })
