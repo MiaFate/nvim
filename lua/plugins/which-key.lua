@@ -59,6 +59,7 @@ return {
 
         l = { "<cmd>Lazy<CR>", "Update plugins" },
 
+
         s = { vim.cmd.update, "Save" },
 
         -- Telescope
@@ -87,7 +88,12 @@ return {
           end,
           "Toggle Explorer Focus"
         },
-
+        q = {
+          name = "Exit",
+          q = { "<cmd>:q<Cr>", "Exit without saving" },
+          w = { "<cmd>:wq<Cr>", "Save and exit" },
+          ["!"] = { "<cmd>:q!<Cr>", "Force quit" },
+        },
         y = { '"+y', "Copy to system clipboard", mode = "v" },
 
         x = {
@@ -108,6 +114,7 @@ return {
       {
         t = { ":FloatermToggle myfloat<CR>", "FloatermToggle" }
       },
+      ["jk"] = { "<Esc>", "Normal mode", mode = "i" },
       --aca va el proximo prefijo
     })
   end,
