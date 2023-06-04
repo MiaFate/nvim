@@ -116,6 +116,11 @@ return {
       },
       ["jk"] = { "<Esc>", "Normal mode", mode = "i" },
       --aca va el proximo prefijo
+      ["<C-l>"] = { "<cmd>:TmuxNavigateRight<cr>", "right" },
+      ["<C-k>"] = { "<cmd>:TmuxNavigateUp<cr>", "right" },
+      ["<C-j>"] = { "<cmd>:TmuxNavigateDown<cr>", "right" },
+      ["<C-h>"] = { "<cmd>:TmuxNavigateLeft<cr>", "right" },
+      ["<C-[>"] = { "<cmd>:TmuxNavigatePrevious<cr>", "right" },
     })
   end,
 }

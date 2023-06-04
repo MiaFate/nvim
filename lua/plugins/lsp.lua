@@ -17,6 +17,8 @@ return {
   opts = {
     servers = {
       rust_analyzer = {},
+      tsserver = {},
+      tailwindcss = {}
     },
     setup = {
       rust_analyzer = function(_, opts)

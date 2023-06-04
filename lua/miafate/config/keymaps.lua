@@ -46,4 +46,9 @@ map('t', "<Esc>", "<C-\\><C-n>:q<CR>")
 --map("n", "<b",
 --  function() require("miafate.utils.buffer").move(-(vim.v.count > 0 and vim.v.count or 1)) end,
 --  { desc = "Move buffer tab left" }
---)
+---let g:kitty_navigator_no_mappings = 1
+--
+--nnoremap <silent> {Left-Mapping} :KittyNavigateLeft<cr>
+--nnoremap <silent> {Down-Mapping} :KittyNavigateDown<cr>
+--nnoremap <silent> {Up-Mapping} :KittyNavigateUp<cr>
+--nnoremap <silent> {Right-Mapping} :KittyNavigateRight<cr>-)
