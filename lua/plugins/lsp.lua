@@ -4,7 +4,12 @@ return {
   dependencies = {
     -- Automatically install LSPs to stdpath for neovim
     { 'williamboman/mason.nvim', config = true },
-    'williamboman/mason-lspconfig.nvim',
+    {
+      'williamboman/mason-lspconfig.nvim',
+      opts = {
+        automatic_installation = true,
+      }
+    },
 
     -- Useful status updates for LSP
     -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
@@ -18,7 +23,8 @@ return {
     servers = {
       rust_analyzer = {},
       tsserver = {},
-      tailwindcss = {}
+      tailwindcss = {},
+      angularls = {},
     },
     setup = {
       rust_analyzer = function(_, opts)
@@ -28,3 +34,4 @@ return {
     },
   },
 }
+
